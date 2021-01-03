@@ -10,7 +10,7 @@ end
 
 ## build ffmpeg
 
-SDK_VERSION='7.1'
+SDK_VERSION=''
 
 XCODE_PATH='/Applications/Xcode.app/Contents/Developer/Platforms'
 GCC_PATH='/Applications/XCode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang'
@@ -164,7 +164,7 @@ def buildArch(arch)
 end
 
 def mkLipoArgs(lib)
-	"-create -arch armv7 armv7/#{lib}.a -arch armv7 armv7s/#{lib}.a -arch arm64 arm64/#{lib}.a -arch i386 i386/#{lib}.a -output universal/#{lib}.a"
+	"-create -arch -arch arm64 arm64/#{lib}.a -arch i386 i386/#{lib}.a -output universal/#{lib}.a"
 end
 
 desc "check gas-preprocessor.pl"

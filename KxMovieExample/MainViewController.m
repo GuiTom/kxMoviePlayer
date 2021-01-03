@@ -150,9 +150,9 @@
     // Add all the movies present in the app bundle.
     NSBundle *bundle = [NSBundle mainBundle];
     [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"mp4" inDirectory:@"SampleMovies"]];
-    [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"mov" inDirectory:@"SampleMovies"]];
-    [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"m4v" inDirectory:@"SampleMovies"]];
-    [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"wav" inDirectory:@"SampleMovies"]];
+    [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"avi" inDirectory:@"SampleMovies"]];
+    [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"flv" inDirectory:@"SampleMovies"]];
+    [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"mkv" inDirectory:@"SampleMovies"]];
 
     [ma sortedArrayUsingSelector:@selector(compare:)];
     
