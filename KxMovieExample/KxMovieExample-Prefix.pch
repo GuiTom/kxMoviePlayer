@@ -16,7 +16,7 @@
 
 
 // Launch automatically a video, to accelerate the debug tests.
-#define DEBUG_AUTOPLAY
+//#define DEBUG_AUTOPLAY
 
 
 

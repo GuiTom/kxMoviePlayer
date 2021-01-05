@@ -412,7 +412,7 @@ _messageLabel.hidden = YES;
     
     if (_decoder) {
         
-        [self restorePlay];
+        [self play];
         
     } else {
 
