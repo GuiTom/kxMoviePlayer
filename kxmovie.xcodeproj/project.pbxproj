@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		2A23335025A4AB16002C6B38 /* SampleMovies in Resources */ = {isa = PBXBuildFile; fileRef = 2A23334F25A4AB16002C6B38 /* SampleMovies */; };
+
 		8704657C16F6ECA000D4083E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8704657A16F6EC9100D4083E /* libiconv.dylib */; };
 		87E793FD16390F6D000A0848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FC16390F6D000A0848 /* UIKit.framework */; };
 		87E793FF16390F6D000A0848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FE16390F6D000A0848 /* Foundation.framework */; };
@@ -62,7 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+
 		2A23334F25A4AB16002C6B38 /* SampleMovies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleMovies; sourceTree = "<group>"; };
+
 		4E6AB9BC191288370010CAA1 /* kxmovie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kxmovie-Prefix.pch"; sourceTree = "<group>"; };
 		4E6AB9BD19128FDA0010CAA1 /* KxLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
 		8704657A16F6EC9100D4083E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
@@ -191,7 +195,9 @@
 		87E7940216390F6D000A0848 /* KxMovieExample */ = {
 			isa = PBXGroup;
 			children = (
+
 				2A23334F25A4AB16002C6B38 /* SampleMovies */,
+
 				87E7940A16390F6D000A0848 /* KxMovieExample-Prefix.pch */,
 				87E7942B1639108E000A0848 /* AppDelegate.h */,
 				87E7942C1639108E000A0848 /* AppDelegate.m */,
@@ -278,7 +284,9 @@
 				LastUpgradeCheck = 0450;
 				TargetAttributes = {
 					87E793F716390F6D000A0848 = {
+
 						DevelopmentTeam = BKWF9T4NZE;
+
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,7 +318,9 @@
 				87E7940F16390F6D000A0848 /* Default.png in Resources */,
 				87E7941116390F6D000A0848 /* Default@2x.png in Resources */,
 				87E7941316390F6D000A0848 /* Default-568h@2x.png in Resources */,
+
 				2A23335025A4AB16002C6B38 /* SampleMovies in Resources */,
+
 				87E794271639107F000A0848 /* kxmovie.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,8 +386,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+
 				CURRENT_PROJECT_VERSION = 2.0;
 				DEVELOPMENT_TEAM = BKWF9T4NZE;
+
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,7 +412,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/libs/FFmpeg\"",
+					"\"$(SRCROOT)/FFmpeg/arm64\"",
 				);
 				MARKETING_VERSION = 2.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,10 +436,13 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+
 				CURRENT_PROJECT_VERSION = 2.0;
+
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,11 +458,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/libs/FFmpeg\"",
+					"\"$(SRCROOT)/FFmpeg/arm64\"",
 				);
 				MARKETING_VERSION = 2.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F7D87EB9-8C75-4EE9-AB3B-466913B9C8CB";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = include;

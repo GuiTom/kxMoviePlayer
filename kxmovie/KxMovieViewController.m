@@ -1076,6 +1076,7 @@ _messageLabel.hidden = YES;
                 
                 [self pause];
                 [self updateHUD];
+                [self setMoviePosition:0];
                 return;
             }
             

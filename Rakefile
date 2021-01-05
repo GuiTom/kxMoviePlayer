@@ -144,7 +144,9 @@ def buildArch(arch)
 end
 
 def mkLipoArgs(lib)
+
 	"-create -arch arm64 arm64/#{lib}.a -arch i386 i386/#{lib}.a -output universal/#{lib}.a"
+
 end
 
 desc "check gas-preprocessor.pl"

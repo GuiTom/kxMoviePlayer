@@ -153,7 +153,9 @@
     [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"avi" inDirectory:@"SampleMovies"]];
     [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"flv" inDirectory:@"SampleMovies"]];
     [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"mkv" inDirectory:@"SampleMovies"]];
+
     [ma addObjectsFromArray:[bundle pathsForResourcesOfType:@"wmv" inDirectory:@"SampleMovies"]];
+
     [ma sortedArrayUsingSelector:@selector(compare:)];
     
     _localMovies = [ma copy];
