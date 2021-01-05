@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A23335025A4AB16002C6B38 /* SampleMovies in Resources */ = {isa = PBXBuildFile; fileRef = 2A23334F25A4AB16002C6B38 /* SampleMovies */; };
 		8704657C16F6ECA000D4083E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8704657A16F6EC9100D4083E /* libiconv.dylib */; };
 		87E793FD16390F6D000A0848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FC16390F6D000A0848 /* UIKit.framework */; };
 		87E793FF16390F6D000A0848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FE16390F6D000A0848 /* Foundation.framework */; };
@@ -46,7 +47,6 @@
 		87FD6191163A75DC0090956E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79437163910D0000A0848 /* QuartzCore.framework */; };
 		87FD6192163A75DF0090956E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79439163910EA000A0848 /* Accelerate.framework */; };
 		87FD6193163A75E10090956E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79435163910CA000A0848 /* OpenGLES.framework */; };
-		FD20733F5D6A4546A9836E2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D953B9D2DC48FBB580C6AC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,8 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07D459C0599C42B1906B39AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		49D953B9D2DC48FBB580C6AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A23334F25A4AB16002C6B38 /* SampleMovies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleMovies; sourceTree = "<group>"; };
 		4E6AB9BC191288370010CAA1 /* kxmovie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kxmovie-Prefix.pch"; sourceTree = "<group>"; };
 		4E6AB9BD19128FDA0010CAA1 /* KxLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
 		8704657A16F6EC9100D4083E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
@@ -126,7 +125,6 @@
 				87E794411639110F000A0848 /* Accelerate.framework in Frameworks */,
 				87E794421639110F000A0848 /* QuartzCore.framework in Frameworks */,
 				87E794431639110F000A0848 /* OpenGLES.framework in Frameworks */,
-				FD20733F5D6A4546A9836E2D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +153,6 @@
 				87FD6177163A75440090956E /* kxmovie */,
 				87E793FB16390F6D000A0848 /* Frameworks */,
 				87E793F916390F6D000A0848 /* Products */,
-				07D459C0599C42B1906B39AD /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,7 +184,6 @@
 				87E79439163910EA000A0848 /* Accelerate.framework */,
 				87E79437163910D0000A0848 /* QuartzCore.framework */,
 				87E79435163910CA000A0848 /* OpenGLES.framework */,
-				49D953B9D2DC48FBB580C6AC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +191,7 @@
 		87E7940216390F6D000A0848 /* KxMovieExample */ = {
 			isa = PBXGroup;
 			children = (
+				2A23334F25A4AB16002C6B38 /* SampleMovies */,
 				87E7940A16390F6D000A0848 /* KxMovieExample-Prefix.pch */,
 				87E7942B1639108E000A0848 /* AppDelegate.h */,
 				87E7942C1639108E000A0848 /* AppDelegate.m */,
@@ -242,11 +239,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87E7941A16390F6D000A0848 /* Build configuration list for PBXNativeTarget "KxMovieExample" */;
 			buildPhases = (
-				D2074A9FBC4F4D4892A202BE /* Check Pods Manifest.lock */,
 				87E793F416390F6D000A0848 /* Sources */,
 				87E793F516390F6D000A0848 /* Frameworks */,
 				87E793F616390F6D000A0848 /* Resources */,
-				B5B7274CA0134F769E7882A1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +278,8 @@
 				LastUpgradeCheck = 0450;
 				TargetAttributes = {
 					87E793F716390F6D000A0848 = {
-						DevelopmentTeam = 82J7XA77JC;
+						DevelopmentTeam = BKWF9T4NZE;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -292,6 +288,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 87E793EB16390F10000A0848;
@@ -313,44 +310,12 @@
 				87E7940F16390F6D000A0848 /* Default.png in Resources */,
 				87E7941116390F6D000A0848 /* Default@2x.png in Resources */,
 				87E7941316390F6D000A0848 /* Default-568h@2x.png in Resources */,
+				2A23335025A4AB16002C6B38 /* SampleMovies in Resources */,
 				87E794271639107F000A0848 /* kxmovie.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B5B7274CA0134F769E7882A1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2074A9FBC4F4D4892A202BE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87E793F416390F6D000A0848 /* Sources */ = {
@@ -400,7 +365,6 @@
 		};
 		87E7941B16390F6D000A0848 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D459C0599C42B1906B39AD /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -408,9 +372,13 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = BKWF9T4NZE;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -434,9 +402,12 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/FFmpeg\"",
 				);
+				MARKETING_VERSION = 2.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.kolyvan.KxMovieExamplex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F7D87EB9-8C75-4EE9-AB3B-466913B9C8CB";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = ffmpeg;
@@ -446,7 +417,6 @@
 		};
 		87E7941C16390F6D000A0848 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D459C0599C42B1906B39AD /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -457,6 +427,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2.0;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -473,6 +445,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/FFmpeg\"",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F7D87EB9-8C75-4EE9-AB3B-466913B9C8CB";
 				SDKROOT = iphoneos;

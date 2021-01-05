@@ -1,10 +1,18 @@
 PODS:
-  - NSLogger (1.2)
+  - NSLogger (1.5.1):
+    - NSLogger/Standard (= 1.5.1)
+  - NSLogger/Standard (1.5.1)
 
 DEPENDENCIES:
   - NSLogger
 
-SPEC CHECKSUMS:
-  NSLogger: 9607fdeafd0b09922c69615f99f127de45971b8f
+SPEC REPOS:
+  trunk:
+    - NSLogger
 
-COCOAPODS: 0.32.1
+SPEC CHECKSUMS:
+  NSLogger: 5ed223a2436df96244e033be750656dacdeec034
+
+PODFILE CHECKSUM: e963344b31368ee1713c92f5fce4bb6dfc347f7b
+
+COCOAPODS: 1.10.0
