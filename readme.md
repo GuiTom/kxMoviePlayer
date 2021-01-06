@@ -6,14 +6,14 @@ FFmpegPlayer-iOS - A movie player for iOS based on FFmpeg.
 First you need to download, configure and build [FFmpeg](http://ffmpeg.org/index.html). For this, open console and type in:
 	
 	cd kxmovie
-	git submodule update --init	
+	git submodule update --init	## ffmpeg 是作为一个 子模块引用进来的
 	rake
 
 ### Usage
 
-1. Drop files from kxmovie/output folder in your project.
-2. Add frameworks: MediaPlayer, CoreAudio, AudioToolbox, Accelerate, QuartzCore, OpenGLES and libz.dylib .
-3. Add libs: libkxmovie.a, libavcodec.a, libavformat.a, libavutil.a, libswscale.a, libswresample.a
+1. Drop files from kxmovie/output folder in your project.## 脚本变了 只有执行过 rake build_all之后才能在 output 文件夹里面找到output 文件夹，如果只是想引用 ffmpeg 库，那就得 git 克隆 ffmpeg 子模块 ，并把 ffmpeg 目录作为 User Header Seach Path   
+2. Add frameworks: MediaPlayer, CoreAudio, AudioToolbox, Accelerate, QuartzCore, OpenGLES and libz.dylib . ## 这些是必要的
+3. Add libs: libkxmovie.a, libavcodec.a, libavformat.a, libavutil.a, libswscale.a, libswresample.a 
 
 For play movies:
 
