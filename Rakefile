@@ -276,11 +276,15 @@ task :copy_movie do
 	FileUtils.copy_entry Pathname.new('kxmovie/kxmovie.bundle'), dest + 'kxmovie.bundle'
 end	
 
-##
+#输入 rake clean 命令的时候执行这条任务
 task :clean => [:clean_movie_debug, :clean_movie_release, :clean_ffmpeg]
+#输入 rake build_ffmpeg 命令的时候执行这条任务
 task :build_ffmpeg => [:check_gas_preprocessor, :build_ffmpeg_universal]
+#输入 rake build_movie 命令的时候执行这条任务,这个就是 调用 xcode 将 kxMovie 包括 ffmpeg 库在内打包成一个静态文件 供其他项目使用
 #task :build_movie => [:build_movie_debug, :copy_movie] 
 task :build_movie => [:copy_movie] 
+
 task :build_all => [:build_ffmpeg, :build_movie] 
 # task :default => [:build_all]
+#只输入 rake 就调用这一条
 task :default => [:build_ffmpeg]
