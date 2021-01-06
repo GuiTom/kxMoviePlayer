@@ -11,8 +11,11 @@ First you need to download, configure and build [FFmpeg](http://ffmpeg.org/index
 
 ### Usage
 
-1. Drop files from kxmovie/output folder in your project.## 脚本变了 只有执行过 rake build_all之后才能在 output 文件夹里面找到output 文件夹，如果只是想引用 ffmpeg 库，那就得 git 克隆 ffmpeg 子模块 ，并把 ffmpeg 目录作为 User Header Seach Path   
-2. Add frameworks: MediaPlayer, CoreAudio, AudioToolbox, Accelerate, QuartzCore, OpenGLES and libz.dylib . ## 这些是必要的
+1. Drop files from kxmovie/output folder in your project.
+### 脚本变了 只有执行过 rake build_all之后才能在 output 文件夹里面找到output 文件夹，如果只是想引用 ffmpeg 库，那就得 git 克隆 ffmpeg 子模块 ，并执行 rake，然后 把 ffmpeg 目录作为 User Header Seach Path   
+2. Add frameworks: MediaPlayer, CoreAudio, AudioToolbox, Accelerate, QuartzCore, OpenGLES and libz.dylib . 
+### 这些是必要的
+
 3. Add libs: libkxmovie.a, libavcodec.a, libavformat.a, libavutil.a, libswscale.a, libswresample.a 
 
 For play movies:
